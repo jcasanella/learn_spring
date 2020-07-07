@@ -17,6 +17,18 @@ public class MainApp {
             ICoach coach = context.getBean("tennisCoach", ICoach.class);
             LOGGER.info("Call method getDailyFortune: {}", coach.getDailyFortune());
             LOGGER.info("Call method getDailyWorkout: {}", coach.getDailyWorkout());
+
+            ICoach coach2 = context.getBean("basketballCoach", ICoach.class);
+            LOGGER.info("Call method getDailyFortune: {}", coach2.getDailyFortune());
+            LOGGER.info("Call method getDailyWorkout: {}", coach2.getDailyWorkout());
+
+            ICoach coach3 = context.getBean("baseballCoach", ICoach.class);
+            LOGGER.info("Call method getDailyFortune: {}", coach3.getDailyFortune());
+            LOGGER.info("Call method getDailyWorkout: {}", coach3.getDailyWorkout());
+
+            ICoach coach4 = context.getBean("footballCoach", ICoach.class);
+            LOGGER.info("Call method getDailyFortune: {}", coach4.getDailyFortune());
+            LOGGER.info("Call method getDailyWorkout: {}", coach4.getDailyWorkout());
         }
     }
 }
